@@ -10,10 +10,19 @@ function drawInfo(){
 }
 
 
+
 export default class InfoController{
     constructor(){
+        _infoService.addSubscriber('info', drawInfo)
         drawInfo()
         console.log('Controller says hi')
     }
 
+    deposit(){
+        _infoService.deposit()
+    }
+
+    withdraw(){
+        _infoService.withdraw()
+    }
 }
