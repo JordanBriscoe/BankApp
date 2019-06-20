@@ -1,4 +1,4 @@
-import InfoController from "./component/InfoController";
+import InfoController from "./component/InfoController.js";
 
 
 
