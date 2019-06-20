@@ -7,4 +7,9 @@ export default class InfoService{
     constructor(){
         console.log('Service says hi')
     }
+
+    get Info(){
+        return new Info(_info)
+        // return _info this doesn't break reference
+    }
 }
